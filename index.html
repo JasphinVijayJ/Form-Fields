@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Creating All Form Format</h1>
+    <div class="container">
+        <form id="forms">
+
+            <label for="fname">First Name <span style="color: red;">*</span> </label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your first name" required>
+            <br>
+
+            <label for="lname">Last Name <span style="color: red;">*</span> </label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name" required>
+            <br>
+
+            <label for="email">Email Address <span style="color: red;">*</span> </label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <br>
+
+            <label for="phone">Phone Number <span style="color: red;">*</span> </label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" required>
+            <br>
+
+            <label for="password">Password <span style="color: red;">*</span> </label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <br>
+
+            <label for="confirmpassword">Confirm Password <span style="color: red;">*</span> </label>
+            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Enter the confirm password" required>
+            <br>
+
+            <label for="dob">Date Of Birth <span style="color: red;">*</span> </label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+
+            <label for="gender">Gender <span style="color: red;">*</span> </label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website" placeholder="Enter your website URL">
+            <br>
+
+            <label for="file-upload">Upload your Resume <span style="color: red;">*</span> </label>
+            <input type="file" id="file-upload" name="file-upload" required>
+            <br>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" cols="35" placeholder="Enter your message"></textarea>
+            <br>
+
+            <label for="agree">
+                <input type="checkbox" id="agree" name="agree" required> I agree to the terms and conditions.
+                <span style="color: red;">*</span>
+            </label>
+            <br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
